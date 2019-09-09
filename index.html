@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Github</title>
+    <title>Recipix</title>
     <link
       rel="stylesheet"
       type="text/css"
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
   </head>
   <body class="container">
-    <h1>Github</h1>
+    <h3>Recipes</h3>
 
     <div>
-      <h3>User</h3>
       <div class="row">
-        <img id="useravatar" src="" class="col-md-1" />
-        <div class="col-md-3">
-          <strong id="username"></strong>
+        <div class="card" style="width: 18rem;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title" id="recipe-title">Recipe title</h5>
+            <ul class="card-text" id="recipe-ingredients"></ul>
+            <a href="#" id="recipe-url" class="btn btn-primary">Learn more</a>
+          </div>
         </div>
       </div>
     </div>
