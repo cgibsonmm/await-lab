@@ -44,7 +44,7 @@ function showIngredients(recipe) {
 // How would you display all ten `results` at once?
 // Use the existing functions `findRecipes` and `showIngredients` to display all ten recipe results.
 
-// BONUS - Display Recipe Images
+// PART 5 - Display Search bar results
 
-// Think you can go deeper? Try to display recipe images, using the `/recipe-images/` API endpoint.
-// Learn how this endpoint works using the documentation linked [here](https://recipix.tech/api/docs).
+// Try to display recipes using a search bar for text input.
+// HINT: Start by uncommenting the search bar in index.html
