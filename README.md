@@ -37,7 +37,7 @@ A: `try` to use `await` in an `async` function.
 ```javascript
 async function fetchData() {
   try {
-    let response = api.get('https://recipix.tech/search?q=banana');
+    let response = api.get('https://recipix.app/search?q=banana');
     let result = await response.data;
   } catch (err) {
     console.log(err);
@@ -50,7 +50,7 @@ B: Or we could use `.then()` syntax.
 ```javascript
 function fetchData() {
   let response = api
-    .get('https://recipix.tech/search?q=banana')
+    .get('https://recipix.app/search?q=banana')
     .then(response => {
       console.log(response.data);
     })
@@ -70,7 +70,7 @@ Using an async request, show a recipe's title and link on your website.
 async function findRecipes(recipeName) {
   // read recipe
   let response = await axios.get(
-    `https://recipix.tech/api/search/?q=${recipeName}`
+    `https://recipix.app/api/search/?q=${recipeName}`
   );
 
   // document.getElementById('recipe-title').innerHTML = ???
@@ -108,4 +108,4 @@ HINT: Start by uncommenting the search bar in index.html
 ## Resources
 
 - [Async Await](https://javascript.info/async-await)
-- [Recipix API Docs](https://recipix.tech/api/docs)
+- [Recipix API Docs](https://recipix.app/api/docs)
