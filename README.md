@@ -15,7 +15,7 @@
 - `await`
 - `try/catch`
 
-```
+```js
 try {
   // request
 } catch(err) {
