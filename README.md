@@ -1,10 +1,10 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Async Await - Recipe Lab
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Async Await - Country Lab
 
 <img src="https://media.giphy.com/media/4lQnwnB9hVXlm/giphy.gif" height='200px' />
 
 ## Exercise Labs
 
-- EXERCISE: Fetching Recipes - 5min
+- EXERCISE: Fetching Country - 5min
 - EXERCISE: Fetching Ingredients - 10min
 - EXERCISE: Fetching Recipes from Ingredients - 15min
 - EXERCISE: Fetching Multiple Recipes - 15min
@@ -23,11 +23,11 @@ try {
 }
 ```
 
-## Intro To Recipix Lab
+## Intro To Country Lab
 
-**Become a Master Chef!**
+**Become a World Traveler!**
 
-> Welcome, Developer! Today we are testing a new Recipe API.
+> Welcome, Developer! Today we are testing a new Country API.
 
 <details>
   <summary><strong>Q: How do we fetch async data?</strong></summary>
@@ -35,12 +35,13 @@ try {
 A: `try` to use `await` in an `async` function.
 
 ```javascript
-async function fetchData() {
+async function getData() {
   try {
-    let response = api.get('https://recipix.app/search?q=banana');
-    let result = await response.data;
-  } catch (err) {
-    console.log(err);
+    let response = await axios.get(`https://restcountries.eu/rest/v2/name/spain?fullText=true`)
+    let result = response.data
+    console.log(result)
+  } catch (error) {
+    console.error(error)
   }
 }
 ```
@@ -50,7 +51,7 @@ B: Or we could use `.then()` syntax.
 ```javascript
 function fetchData() {
   let response = api
-    .get('https://recipix.app/search?q=banana')
+    .get('https://restcountries.eu/rest/v2/name/spain?fullText=true')
     .then(response => {
       console.log(response.data);
     })
