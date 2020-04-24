@@ -25,9 +25,7 @@ try {
 }
 ```
 
-## Intro To Country Lab
-
-**Become a World Traveler!**
+# Async/Await Country Lab
 
 > Welcome, Developer! Today we are testing a new Country API.
 
